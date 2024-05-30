@@ -1,0 +1,56 @@
+.header{
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    width: 100%;
+    height: 8vh;
+}
+.container{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10%;
+}
+.logo a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    transition: color 0.5s ease-in; 
+}
+
+.logoSpan {
+    color: #8b0000;
+    transition: color 0.7s ease-out; 
+}
+
+.logo a:hover {
+    color: #8b0000;
+}
+
+.logo a:hover .logoSpan {
+    color: white;
+}
+.button__cart{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cart__img{
+   font-size: 1.5rem;
+}
+
+@media(max-width:550px){
+    .logo a, .logoSpan{
+        font-size: 20px;
+    }
+}
